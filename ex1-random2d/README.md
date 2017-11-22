@@ -25,9 +25,9 @@ trainFeatures <- trainData %>% select(x,y)
 trainLabels <- trainData$labels
 ```
 
-5. Become familiar with the syntax of `knn`.  Briefly, you need:
+5. Become familiar with the syntax of `FNN::knn`.  Briefly, you need:
 ```
-knn(train, predict, labels, k)
+FNN::knn(train, predict, labels, k)
 ```
 where `train` and `predict` are the corresponding features, and
 `labels` are the labels for the training set.  `k` is $k$.
