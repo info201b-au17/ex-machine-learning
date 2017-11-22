@@ -2,7 +2,8 @@ library(dplyr)
 
 showDigit <- function(data, i, col=gray(12:1/12), ...) {
    ## data: a data frame, holding the mnist digits data.
-   ## col
+   ## i    which digit: row in the data frame
+   ## col  colors (need 12 colors)
    data <- data %>%
       select(-label)
                            # remove the label
